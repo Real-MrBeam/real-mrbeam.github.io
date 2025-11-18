@@ -4,7 +4,7 @@ When we were developing the multiplayer VR title **Mannequin** for the Quest 2, 
 
 One of the most important parts of the game is guiding players through dark, maze-like levels. The experience can shift at any moment from slow, thriller-like tension to fast-paced shooting, and when that happens, it's vital that the player instantly understands which optional routes are available.
 
-![ermioni-mina-pavlidou mannequin 3](_attachments/ermioni-mina-pavlidou-mannequin-3.jpg)
+![ermioni-mina-pavlidou mannequin 3](/assets/ermioni-mina-pavlidou-mannequin-3.jpg)
 
 The game is built from many modular pieces *(which is a challenge on the Quest 2 in itself, but that's another story)*. Because of this, light quality could easily suffer, and avoiding that became a top priority.
 
