@@ -6,6 +6,14 @@ One of the most important parts of the game is guiding players through dark, maz
 
 ![ermioni-mina-pavlidou mannequin 3](/assets/ermioni-mina-pavlidou-mannequin-3.jpg)
 
+![LS](/assets/LightShaft.mp4)
+
+<video controls autoplay muted loop playsinline width="700">
+  <source src="/assets/LightShaft.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 The game is built from many modular pieces *(which is a challenge on the Quest 2 in itself, but that's another story)*. Because of this, light quality could easily suffer, and avoiding that became a top priority.
 
 #### We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.
