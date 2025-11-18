@@ -17,7 +17,7 @@ The game is built from many modular pieces *(which is a challenge on the Quest 2
 Heavy use of HLODs made iteration even more painful. During that project, I pushed to switch from CPU to GPU baking, since CPU bakes took far too much time. But I joined mid-production, and GPU Lightmass didn't support manually edited HLODs at the time, that was one of the reasons we had to drop the idea.
 
 *First test of GPU light baking using the Realtime and Bake What You See settings on Vampire: The Masquerade - Justice:*  
-![[BakeWhatYouSee.gif|Example of the bake what you see function.]]
+![BakeWhatYouSee.gif](/assets/BakeWhatYouSee.gif)
 
 ## Experimenting with Lumen
 
