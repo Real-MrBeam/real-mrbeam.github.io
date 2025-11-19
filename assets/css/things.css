@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------
+   Obsidian "Things" Inspired Theme for Jekyll (minima override)
+   ---------------------------------------------------------- */
+
+/* MAIN LAYOUT */
+body {
+    background: #1f2125;           /* Things dark background */
+    color: #d6d6d6;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    line-height: 1.65;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #e7e7e7;
+}
+
+/* LINK COLORS */
+a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #82c2ff;
+    text-decoration: underline;
+}
+
+/* CODE BLOCKS */
+pre, code {
+    background: #2b2d31;
+    color: #e0e0e0;
+    border-radius: 6px;
+    padding: 0.2rem 0.4rem;
+}
+
+/* BLOCK QUOTES */
+blockquote {
+    border-left: 4px solid #4da3ff;
+    padding-left: 1rem;
+    color: #c5c5c5;
+    font-style: italic;
+}
+
+/* LISTS */
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+/* HR LINE */
+hr {
+    border: none;
+    border-top: 1px solid #333;
+}
+
+/* IMAGES */
+img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* VIDEO EMBEDS */
+video {
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 1rem 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* NAVIGATION (minima override) */
+.site-header {
+    background: #1f2125;
+    border-bottom: 1px solid #323437;
+}
+
+.site-title, .site-title:visited {
+    color: #f2f2f2;
+}
+
+.site-nav .page-link {
+    color: #d6d6d6;
+}
+
+.site-nav .page-link:hover {
+    color: #4da3ff;
+}
