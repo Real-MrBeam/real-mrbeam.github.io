@@ -89,3 +89,10 @@ video {
 .site-nav .page-link:hover {
     color: #4da3ff;
 }
+
+/* Hide minima's mobile nav checkbox + hamburger completely */
+.nav-trigger,
+.site-nav label[for="nav-trigger"] {
+    display: none !important;
+}
+
