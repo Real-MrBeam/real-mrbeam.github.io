@@ -9,7 +9,8 @@ When we were developing the multiplayer VR title **Mannequin** for the Quest 2, 
 One of the most important parts of the game is guiding players through dark, maze-like levels. The experience can shift at any moment from slow, thriller-like tension to fast-paced shooting, and when that happens, it's vital that the player instantly understands which optional routes are available.
 
 
-![](/assets/ermioni-mina-pavlidou-mannequin-3.jpg)
+![](/assets/ermioni-mina-pavlidou-mannequin-3.jpg) 
+
 *Image from [Ermioni Pavlidou](https://mi0ne.artstation.com/)*
 
 The game is built from many modular pieces *(which is a challenge on the Quest 2 in itself, but that's another story)*. Because of this, light quality could easily suffer, and avoiding that became a top priority.
@@ -17,12 +18,14 @@ The game is built from many modular pieces *(which is a challenge on the Quest 2
 **We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.**
 
 ![](/assets/amanda-gyllin-justice-art-phonecall-01.jpg)
+
 *Screenshot showing baked lighting from Vampire Justice.*  
 *Assets by [Amanda Gyllin](https://www.artstation.com/amsoca)*
 
 Heavy use of HLODs made iteration even more painful. During that project, I pushed to switch from CPU to GPU baking, since CPU bakes took far too much time. But I joined mid-production, and GPU Lightmass didn't support manually edited HLODs at the time, that was one of the reasons we had to drop the idea.
 
 ![](/assets/BakeWhatYouSee.gif)
+
 *GPU baking using the "Bake What You See" setting on **Vampire: The Masquerade - Justice**:*  
 
 ## Experimenting with Lumen
@@ -31,6 +34,7 @@ Mannequin's lighting design uses a saturated color scheme that communicates game
 
 ![](/assets/amanda-gyllin-mq-art-horizontal-25.jpg)
 ![](/assets/amanda-gyllin-mq-art-horizontal-04.jpg)
+
 *Here are some screenshots showing lighting scenarios from Mannequin.*
 *Images from [Amanda Gyllin](https://www.artstation.com/amsoca)*
 
@@ -61,16 +65,19 @@ This tool handled a lot, but one of its most important tasks was toggling settin
 **We used Vulkan Preview to flip between baked and dynamic lighting, but there was still too much of a visual difference between the Vulkan renderer and the native Forward Renderer.**
 
 ![](/assets/VulkanvsPCcolor.gif)
+
 *Comparing Vulkan and native Forward Renderer with post-process disabled.* 
 
 After carefully investigating and tweaking **Bloom**, **Color Grading Tone Curve**, and **Color Mapping**, we ended up with something close enough for our needs. I think we could've pushed it further with more investigation, but this level of accuracy was acceptable for us.
 
 ![](/assets/VulkalooksPC.gif)
+
 *Comparing Vulkan and native Forward Renderer with tweaked post-process settings.* 
 
 **At last, we had a result that was almost identical!**
 
 ![](/assets/slides.png)
+
 *Comparing Lumen and Static lighting. Lumen on the right.* 
 
 ## Light Shafts without Volumetric Fog
@@ -79,8 +86,8 @@ Forward rendering doesn't support **local volumetric fog**, but we still wanted 
 To solve this, I built a small **Geometry Script** tool that creates a mesh and extrudes it based on the rotation of a directional light.
 
 <video controls autoplay loop muted playsinline>
-  <source src="/assets/Lightshaft.mp4" type="video/mp4">
-  Your browser doesn’t support HTML5 video. Here’s a <a href="/assets/Lightshaft.mp4">link to the video</a>.
+  <source src="/assets/LightShaft.mp4" type="video/mp4">
+  Your browser doesn’t support HTML5 video. Here’s a <a href="/assets/LightShaft.mp4">link to the video</a>.
 </video>
 
 *Showing the debug material on the generated light shaft.* 
@@ -91,6 +98,7 @@ The material relies on distance *(I used distance fields on PC for better precis
 
 ![](/assets/light02.gif)
 ![](/assets/light01.gif)
+
 *Showing the light shaft tool automatically updating with a directional light's rotation.*  
 
 ## Bloom without Mobile HDR
@@ -103,6 +111,7 @@ The material relies on distance *(I used distance fields on PC for better precis
 We placed these quads on emissive features, kept the intensity subtle, and favored convex or flat emissive shapes.
 
 ![](/assets/blog_flares_04.gif)
+
 *Showing the folding technique.*  
 *Image source: [https://simonschreibt.de](https://simonschreibt.de)*
 
@@ -110,11 +119,13 @@ The technique is simple to implement, and we ended up using it on many lights, s
 
 ![](/assets/BloomLink.png)
 ![](/assets/BloomDevice.png)
+
 *Comparing PC post-effect bloom with the fake mesh bloom on device. First image is post-effect. Second image is mesh bloom.*
 
 For round features like the glowing eyes on the time-frozen characters, we used [Dynamic Blob Lights & Shadows](https://www.unrealengine.com/marketplace/en-US/product/modulated-dynamic-lights-blob-shadows) They feel volumetric and cost very little.
 
 ![](/assets/02.png)
+
 *As a bonus, we used the modulated version as contact shadows for the time-frozen characters.*
 
 ## Fake Reflections on Fully Rough Materials
@@ -124,6 +135,7 @@ We used fully rough materials to save instructions and reduce shading cost on th
 
 ![](/assets/AgentFakeRefl.gif)
 ![](/assets/Slides-art-2.png)
+
 *Showing our fake reflection function on our fully rough materials.*  
 
 The downside of this approach is that you get the same reflection strength in all lighting conditions.
