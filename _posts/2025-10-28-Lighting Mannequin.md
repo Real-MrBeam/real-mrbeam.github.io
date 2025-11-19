@@ -13,6 +13,8 @@ One of the most important parts of the game is guiding players through dark, maz
 
 *Image from [Ermioni Pavlidou](https://mi0ne.artstation.com/)*
 
+<!--more-->
+
 The game is built from many modular pieces *(which is a challenge on the Quest 2 in itself, but that's another story)*. Because of this, light quality could easily suffer, and avoiding that became a top priority.
 
 **We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.**
