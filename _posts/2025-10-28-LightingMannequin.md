@@ -6,17 +6,9 @@ One of the most important parts of the game is guiding players through dark, maz
 
 ![ermioni-mina-pavlidou mannequin 3](/assets/ermioni-mina-pavlidou-mannequin-3.jpg)
 
-![LS](/assets/LightShaft.mp4)
-
-<video controls autoplay muted loop playsinline width="700">
-  <source src="/assets/LightShaft.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
 The game is built from many modular pieces *(which is a challenge on the Quest 2 in itself, but that's another story)*. Because of this, light quality could easily suffer, and avoiding that became a top priority.
 
-#### We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.
+**We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.**
 
 *Screenshot showing baked lighting from Vampire Justice.*  
 *Assets by Amanda Gyllin: [https://www.artstation.com/amsoca](https://www.artstation.com/amsoca)*
@@ -45,10 +37,8 @@ Since we didn't have anyone working full time on lighting design, Lumen's quick 
 Later, we decided to switch to **GPU Lightmass**. The small quality loss from GPU baking wasn't noticeable with our stylized look, so the timing was perfect. Epic also made it clear that GPU Lightmass would be supported going forward and that CPU baking was slowly becoming outdated.
 
 Switching to GPU Lightmass was almost frictionless *(aside from the need to upgrade our graphics cards)*, and everyone appreciated the much faster bake times.
-
-Lucky for us, we had an AD who was technically inclined and decided to revisit the issue. He tried working with Lumen again before baking with GPU Lightmass, and this time the results were much closer!
-
-That's when we began building a pipeline that used Lumen's fast iteration during development and GPU Lightmass for final baking.
+&nbsp;&nbsp;&nbsp;&nbsp; Lucky for us, we had an AD who was technically inclined and decided to revisit the issue. He tried working with Lumen again before baking with GPU Lightmass, and this time the results were much closer!
+&nbsp;&nbsp;&nbsp;&nbsp; That's when we began building a pipeline that used Lumen's fast iteration during development and GPU Lightmass for final baking.
 
 ## Lumen and GPU Lightmass
 
@@ -90,8 +80,7 @@ At last, we had a result that was almost identical!
 ## Light Shafts without Volumetric Fog
 
 Forward rendering doesn't support **local volumetric fog**, but we still wanted good looking sun shafts in our project. We also had another challenge: we didn't want a single global sunlight direction. We wanted the freedom to let the "sun" "shine in different directions in different areas of the levels, simply because it gave art direction more control over how each space was lit.
-
-To solve this, I built a small **Geometry Script** tool that creates a mesh and extrudes it based on the rotation of a directional light.
+&nbsp;&nbsp;&nbsp;&nbsp; To solve this, I built a small **Geometry Script** tool that creates a mesh and extrudes it based on the rotation of a directional light.
 
 *Showing the debug material on the generated light shaft.* 
 ![[TMRHzFx5.mp4]]
