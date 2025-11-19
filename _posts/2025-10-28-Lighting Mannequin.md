@@ -95,6 +95,7 @@ The material relies on distance *(I used distance fields on PC for better precis
 
 ## Bloom without Mobile HDR
 
+
 **Mobile HDR** enables post effects like bloom, but it was too expensive for our Quest budget. Instead, we faked bloom using the [GlowingQuad Plugin](https://github.com/hollowdilnik/GlowingQuad). It uses a **single quad** that folds its sides based on the camera angle.
 
 **With careful use, it looks convincing and costs almost nothing. You can use any material as long as it doesn't rely on vertex color, since the GPU version of the plugin uses vertex color for the folding system.**
