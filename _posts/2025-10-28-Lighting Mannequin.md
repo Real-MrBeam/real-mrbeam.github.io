@@ -19,8 +19,8 @@ The game is built from many modular pieces *(which is a challenge on the Quest 2
 
 ![](/assets/amanda-gyllin-justice-art-phonecall-01.jpg)
 
-*Screenshot showing baked lighting from Vampire Justice.*  
-*Assets by [Amanda Gyllin](https://www.artstation.com/amsoca)*
+*Screenshot showing baked lighting from Vampire Justice.*
+*Images from [Amanda Gyllin](https://www.artstation.com/amsoca)*
 
 Heavy use of HLODs made iteration even more painful. During that project, I pushed to switch from CPU to GPU baking, since CPU bakes took far too much time. But I joined mid-production, and GPU Lightmass didn't support manually edited HLODs at the time, that was one of the reasons we had to drop the idea.
 
