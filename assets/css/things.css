@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
     color: #e7e7e7;
 }
 
-/* LINK COLORS */
+/* Bright blue links, Things-style */
 a {
     color: #4da3ff;
     text-decoration: none;
@@ -95,4 +95,17 @@ video {
 .site-nav label[for="nav-trigger"] {
     display: none !important;
 }
+
+/* Orange h4 headings (#### in markdown) */
+h4 {
+    color: #ffa94d; /* Things-style warm orange */
+}
+
+/* Make all italic text (Markdown *) pink */
+em,
+i {
+    color: #ff7eb6; /* Things-style pink */
+}
+
+
 
