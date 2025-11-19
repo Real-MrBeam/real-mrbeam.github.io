@@ -107,5 +107,16 @@ i {
     color: #ff7eb6; /* Things-style pink */
 }
 
+/* Hide the footer heading (the second "My Site" at the bottom) */
+.footer-heading {
+    display: none;
+}
+
+/* Optional: shrink footer text a bit */
+.site-footer {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+}
+
 
 
