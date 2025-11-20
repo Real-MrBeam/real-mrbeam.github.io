@@ -1,6 +1,7 @@
 ## Opening Notes
 This article is dedicated to the people who made Mannequin possible. 
-Such an amazing team that was never afraid of testing new ways of doing things. Without that mindset, we would not have discovered the Lumen to GPU bake lighting workflow. Or any of the other ideas you will see here.
+Such an amazing team that was never afraid of testing new ways of doing things. Without that mindset we would not have created the Lumen to GPU bake lighting workflow, or any of the other ideas you will see here.
+
 ## Lighting Goals for Mannequin
 When we were developing the multiplayer VR title **Mannequin** for the Quest 2, we realized early in production that lighting design would play a crucial role in the project.
 
@@ -17,7 +18,7 @@ The game is built from many modular pieces *(which is a challenge on the Quest 2
 
  <!--more-->
 
-**We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice.**
+**We also knew that baked lighting is tedious to iterate on and incredibly slow. We learned this during the development of the Quest 2 title Vampire: The Masquerade - Justice. **
 
 ![](/assets/amanda-gyllin-justice-art-phonecall-01.jpg)
 
