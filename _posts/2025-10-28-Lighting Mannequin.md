@@ -99,7 +99,7 @@ To solve this, I built a small **Geometry Script** tool that creates a mesh and 
 The material relies on distance *(I used distance fields on PC for better precision)* and uses fresnel for fading. This prevented clipping and kept the effect from looking flat or two-dimensional. The result turned out better than expected, so we used the technique in the PC version as well.
 
 ![](/assets/light02.gif)
-![](/assets/light01.gif)
+![|520](/assets/light01.gif){: width="520" }
 
 *Showing the light shaft tool automatically updating with a directional light's rotation.*  
 
@@ -136,7 +136,7 @@ We used fully rough materials to save instructions and reduce shading cost on th
 &nbsp;&nbsp;&nbsp;&nbsp; One nice side effect was that we could use the same function to reduce the specular flickering you usually get on reflective materials in the distance on low-resolution devices.
 
 ![](/assets/AgentFakeRefl.gif)
-![](/assets/Slides-art-2.png)
+![|465](/assets/Slides-art-2.png){: width="465" }
 
 *Showing our fake reflection function on our fully rough materials.*  
 
@@ -164,3 +164,5 @@ The content stayed the same. The primary difference was light mobility. Many lig
 
 ## Ending Notes
 In the end, Mannequin's lighting was not about one solution. It was a handful of practical choices that worked together, tools **and a lot of teamwork**. I hope you found this helpful or at least interesting. Next time I will write about how we optimized our titles for VR.
+
+If you are interested in the tools mentioned in this blog post you can find most of them in my [ue tool repository](https://codeberg.org/MrBeam/ue_tools).
