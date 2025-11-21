@@ -79,7 +79,7 @@ After carefully investigating and tweaking **Bloom**, **Color Grading Tone Curve
 
 **At last, we had a result that was almost identical!**
 
-![](/assets/slides.png)
+![](/assets/Slides.png)
 
 *Comparing Lumen and Static lighting. Lumen on the right.* 
 
